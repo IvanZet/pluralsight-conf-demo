@@ -44,6 +44,4 @@ public class SessionsController {
         BeanUtils.copyProperties(session, existingSession, "session_id");
         return sessionRepository.saveAndFlush(existingSession);
     }
-
-//    FIXME: Continue: implement SpeakersController in the same way
 }
